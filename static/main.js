@@ -66,7 +66,7 @@ var app = new Vue ({
 
         this.socket.alerts = io('http://localhost:3000/alerts');
         this.socket.alerts.on("alertToClient", (message) => {
-            this.receivedAlertMessage(message);
+            this.receiveAlertMessage(message);
         });
     }
 });
